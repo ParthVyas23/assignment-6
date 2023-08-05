@@ -37,7 +37,7 @@ export default function MainNav() {
       query += "&q=" + data.q;
     }
 
-    setSearchHistory(await addToHistory(path));
+    setSearchHistory(await addToHistory(query));
 
     router.push(`/artwork?${query}`);
   }
